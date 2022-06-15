@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDEE Calculator - Calculate your daily maintenance calorie intake</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="script.js" defer></script>
+    <!-- Created with passion by Corné Adema / 0xcorne
+    GitHub: https://github.com/0xcorne  -->
+</head>
+<body>
+    <header>
+        <div class="main_nav">
+            <h1>TDEE Calculator</h1>
+        </div>
+        <div class="under_nav">
+            <h2>Calculate your daily maintenance calorie intake with my calculator 🧮</h2>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <h1 id="info_h1">Please fill in the information:</h1>
+            <div class="gender">
+            <h2 id="gender_text">Gender:</h2>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="gender">Female</label>
+            </div>
+            <div class="age">
+            <h2>Age:</h2> 
+            <input type="number" id="age" name="age" required>
+            <label for="age">Years </label>
+            </div>
+            <div class="height">
+            <h2>Height:</h2>
+            <input type="number" id="height" name="height" required>
+            <label for="height">in cm</label>
+            </div>
+            <div class="weight">
+            <h2>Weight:</h2>
+            <input type="number" id="weight" name="weight" required>
+            <label for="weight">in kg</label>
+            <div class="pal_drop">
+            <h2>Physical activity level:</h2>
+            <label for="pal">Make your choice:</label>
+            <select id="pal" name="pal" required>
+            <option value="1.2">Little/no exercise (sedentary lifestyle)</option>
+            <option value="1.375">Light exercise 1-2 times/week</option>
+            <option value="1.55">Moderate exercise 2-3 times/week</option>
+            <option value="1.725">Hard exercise 4-5 times/week</option>
+            <option value="1.9">Physical job or hard exercise 6-7 times/week</option>
+            <option value="2.4">Professional athlete</option>
+            </select>
+            </div>
+            </div></form>
+            <button type="submit" id="calculate_button">Calculate</button>
+            <div class="results">
+            <h3 id="tdee_result">TDEE:</h3> 
+            </div>
+        </div>
+    </main>
+</body>
+</html>
