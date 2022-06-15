@@ -11,6 +11,7 @@ GitHub: https://github.com/0xcorne  */
 body {
     font-family: 'Abel';
     background: rgba(202, 201, 202, 0.698);
+    min-height: 63rem;
 }
 
 .main_nav {
@@ -49,8 +50,9 @@ body {
     border: 2px solid black;
     border-radius: 15px;
     position: relative;
-    top: 10rem;
+    top: 7rem;
     margin: 0 auto;
+    margin-bottom: 3rem;
     box-shadow: 2px 2px 10px 1px;
     align-items: center;
     justify-content: top;
